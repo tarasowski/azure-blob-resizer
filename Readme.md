@@ -77,3 +77,5 @@ Add the following environment variable to your function app under "Environment v
 - `AzureWebJobsStorage: ConnectionStringToS3`
 
 By following these steps, you should have successfully created and deployed an Azure Blob Resizer using the Azure CLI.
+
+You can find more examples [here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
