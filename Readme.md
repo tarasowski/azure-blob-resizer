@@ -67,7 +67,7 @@ Upload a JPEG file into the `/input` folder and verify that it appears in the `o
 2. Deploy your functions into the function app:
 
 ```bash
-func azure functionapp publish <FunctionAppName>
+func azure functionapp publish <FunctionAppName> --publish-local-settings
 ```
 
 ### Step 8: Configure Environment Variables
