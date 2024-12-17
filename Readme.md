@@ -32,7 +32,6 @@ Copy the necessary code from `src` and install the dependencies listed in `packa
 
 ```bash
 cd MyProjFolder
-cp -r src/* .
 npm install
 ```
 
