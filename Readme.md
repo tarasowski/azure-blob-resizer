@@ -69,12 +69,4 @@ Upload a JPEG file into the `/input` folder and verify that it appears in the `o
 func azure functionapp publish <FunctionAppName> --publish-local-settings
 ```
 
-### Step 8: Configure Environment Variables
-
-Add the following environment variable to your function app under "Environment variables":
-
-- `AzureWebJobsStorage: ConnectionStringToS3`
-
-By following these steps, you should have successfully created and deployed an Azure Blob Resizer using the Azure CLI.
-
 You can find more examples [here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
