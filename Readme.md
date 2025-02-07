@@ -63,11 +63,22 @@ Upload a JPEG file into the `/input` folder and verify that it appears in the `o
 
 ### Step 7: Deploy the Function App
 
-1. **Create a function app** (use Windows as the operating system).
-2. Deploy your functions into the function app:
+1. Create a storage accoun for a function:
+
+```
+az storage account create -n <storageaccountname> --location germanywestcentral --resource-group <resourcegroupname> --sku Standard_LRS
+```
+
+2. Create a function app
+
+```
+az functionapp create --consumption-plan-location germanywestcentral --name <yourfunctionname> --os-type Linux --resource-group <yourresourcegroupname> --runtime node --runtime-version 20 --storage-account <storageaccountname>
+```
+
+3. Publish your function
 
 ```bash
-func azure functionapp publish <FunctionAppName> --publish-local-settings
+func azure functionapp publish <functionappnamee> --publish-local-settings
 ```
 
 You can find more examples [here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
