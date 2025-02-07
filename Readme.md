@@ -7,6 +7,7 @@ This guide provides a step-by-step tutorial on setting up and deploying an Azure
 Before starting, make sure you have the following installed:
 
 1. **Azure CLI**: Follow the installation instructions [here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=linux%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-javascript).
+2. Note: The above tutorial is not working for Ubuntu 22.04, please use this [tutorial](https://github.com/Azure/azure-functions-core-tools/issues/3037#issuecomment-1158348373)
 
 ## Steps
 
